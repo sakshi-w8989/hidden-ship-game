@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find the Hidden Ship</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>🚢 FIND THE HIDDEN SHIP!</h1>
+
+        <p class="instructions">
+            Find and destroy the hidden NSUT ship!
+        </p>
+
+        <div class="stats">
+            <p>Hits: <span id="hits">0</span>/3</p>
+            <p>Guesses: <span id="guesses">0</span></p>
+        </div>
+
+        <div id="board" class="board">
+
+            <button onclick="makeGuess(0)">0</button>
+            <button onclick="makeGuess(1)">1</button>
+            <button onclick="makeGuess(2)">2</button>
+            <button onclick="makeGuess(3)">3</button>
+            <button onclick="makeGuess(4)">4</button>
+            <button onclick="makeGuess(5)">5</button>
+            <button onclick="makeGuess(6)">6</button>
+
+        </div>
+
+        <p id="message" class="message">
+            Choose a position from 0-6
+        </p>
+
+        <div id="result" class="result"></div>
+
+        <button id="restart" onclick="restartGame()">
+            Play Again
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
